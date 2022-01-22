@@ -92,7 +92,7 @@ Built with [ExpressJS](https://expressjs.com/).
 
 #### Get questions by difficulty
 
-```http
+```https
     GET /api/questions/${difficulty}/${start}-${end}
 ```
 
