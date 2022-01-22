@@ -31,7 +31,7 @@ Built with [ExpressJS](https://expressjs.com/).
 
 ### Base URL
 
-```http
+```https
     https://localhost:8080 (Not yet deployed)
 ```
 
@@ -43,37 +43,37 @@ Built with [ExpressJS](https://expressjs.com/).
 
 #### Get profile
 
-```http
+```https
   GET /api/user/${username}
 ```
 
 #### Get submissions
 
-```http
+```https
   GET /api/${username}/submissions
 ```
 
 #### Get badges
 
-```http
+```https
     GET /api/${username}/badges
 ```
 
 #### Get recent data
 
-```http
+```https
     GET /api/${username}/recent
 ```
 
 #### Get recent submissions
 
-```http
+```https
     GET /api/${username}/recent/submissions
 ```
 
 #### Get recent topics
 
-```http
+```https
     GET /api/${username}/recent/topics
 ```
 
@@ -81,7 +81,7 @@ Built with [ExpressJS](https://expressjs.com/).
 
 #### Get questions
 
-```http
+```https
     GET /api/questions/${start}-${end}
 ```
 
