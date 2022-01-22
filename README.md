@@ -1,17 +1,113 @@
-<h1 align="center">Leetcode API</h1>
-<p>An unofficial API for leetcode</p>
 
-<h2 align="center">Usage</h2>
-<p>Base URL : {ph}</p>
-<ul>
-    <li>Get user data
-        <ul><code>/User/{username}</code></ul>
-    </li>
-    <li>Get all questions
-        <ul><code>/Questions</code></ul>
-    </li>
-    <li>Get question by difficulty
-        <ul><code>/Questions/{difficulty}</code></ul>
-    </li>
-</ul>
+# Leetcode API
 
+An unofficial API for interfacing with [leetcode's](https://leetcode.com) graphql database.
+
+## Why 🤔
+
+While working on other projects, I realized that there weren't many easy options for interacting
+with the leetcode grapql api. So when I needed data, I had to reverse engineer the API to get what I needed.
+
+This project was built to solve that problem.
+
+Built with [ExpressJS](https://expressjs.com/).
+## Lessons Learnt 📖
+
+- How to build a Backend/API with [ExpressJS](https://expressjs.com/).
+- What REST APIs are.
+- What HTTP response status codes are.
+- How to design APIs.
+- How to better handle errors with asyncronous code.
+## Resources used 👓
+[ExpressJS Documentation](https://expressjs.com/en/5x/api.html)
+
+[How to request a GraphQL API with Axios](https://hasura.io/blog/how-to-request-a-graphql-api-with-fetch-or-axios/)
+
+[RESTful APIs in 100 Seconds](https://www.youtube.com/watch?v=-MTSQjw5DrM&ab_channel=Fireship)
+
+[Designing Quality APIs (Cloud Next'18)](https://www.youtube.com/watch?v=P0a7PwRNLVU&t=729s)
+
+## API Endpoints 🌐
+
+### Base URL
+
+```http
+    https://localhost:8080 (Not yet deployed)
+```
+
+### User
+
+| Parameter | Type     | Required | Description        | 
+| :-------- | :------- | :------- | :----------        |
+| `username` | `string`| ✔️       | Username to fetch.|
+
+#### Get profile
+
+```http
+  GET /api/user/${username}
+```
+
+#### Get submissions
+
+```http
+  GET /api/${username}/submissions
+```
+
+#### Get badges
+
+```http
+    GET /api/${username}/badges
+```
+
+#### Get recent data
+
+```http
+    GET /api/${username}/recent
+```
+
+#### Get recent submissions
+
+```http
+    GET /api/${username}/recent/submissions
+```
+
+#### Get recent topics
+
+```http
+    GET /api/${username}/recent/topics
+```
+
+### Questions
+
+#### Get questions
+
+```http
+    GET /api/questions/${start}-${end}
+```
+
+| Parameter | Type     | Required | Description                   | 
+| :-------- | :------- | :------- | :---------------------------- |
+| `start`   | `number` | ❌       | Question to start at. |
+| `end`     | `number` | ❌       | Question to stop at.  |
+
+#### Get questions by difficulty
+
+```http
+    GET /api/questions/${difficulty}/${start}-${end}
+```
+
+| Parameter | Type     | Required | Description                   | 
+| :-------- | :------- | :------- | :---------------------------- |
+| `difficulty` | `string` | ✔️       | Question difficulty. |
+| `start`   | `number` | ❌       | Question to start at. |
+| `end`     | `number` | ❌       | Question to stop at.  |
+
+## Roadmap 🛣️
+
+- Add ability to GET question by questionID.
+- Caching/Storing data to make API calls quicker.
+
+
+## Feedback ✉️
+
+If you have any feedback/comments/requests please feel free to open an [issue](https://github.com/Ruin9999/leetcode-api/issues) or contact me at b14ktoss@gmail.com 😊.
