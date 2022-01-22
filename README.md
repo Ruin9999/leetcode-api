@@ -6,7 +6,7 @@ An unofficial API for interfacing with [leetcode's](https://leetcode.com) graphq
 ## Why 🤔
 
 While working on other projects, I realized that there weren't many easy options for interacting
-with the leetcode grapql api. So when I needed data, I had to reverse engineer the API to get what I needed.
+with the leetcode's grapql api. So when I needed data, I had to reverse engineer the API to get what I needed.
 
 This project was built to solve that problem.
 
