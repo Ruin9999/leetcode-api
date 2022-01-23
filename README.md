@@ -32,7 +32,7 @@ Built with [ExpressJS](https://expressjs.com/).
 ### Base URL
 
 ```https
-    https://localhost:8080 (Not yet deployed)
+    https://leetcode-api-1d31.herokuapp.com
 ```
 
 ### User
