@@ -44,37 +44,37 @@ Built with [ExpressJS](https://expressjs.com/).
 #### Get profile
 
 ```https
-  GET /api/user/${username}
+  GET /api/user/{username}
 ```
 
 #### Get submissions
 
 ```https
-  GET /api/${username}/submissions
+  GET /api/user/{username}/submissions
 ```
 
 #### Get badges
 
 ```https
-    GET /api/${username}/badges
+    GET /api/user/{username}/badges
 ```
 
 #### Get recent data
 
 ```https
-    GET /api/${username}/recent
+    GET /api/user/{username}/recent
 ```
 
 #### Get recent submissions
 
 ```https
-    GET /api/${username}/recent/submissions
+    GET /api/user/{username}/recent/submissions
 ```
 
 #### Get recent topics
 
 ```https
-    GET /api/${username}/recent/topics
+    GET /api/user/{username}/recent/topics
 ```
 
 ### Questions
@@ -82,7 +82,7 @@ Built with [ExpressJS](https://expressjs.com/).
 #### Get questions
 
 ```https
-    GET /api/questions/${start}-${end}
+    GET /api/questions/{start}-{end}
 ```
 
 | Parameter | Type     | Required | Description                   | 
@@ -93,7 +93,7 @@ Built with [ExpressJS](https://expressjs.com/).
 #### Get questions by difficulty
 
 ```https
-    GET /api/questions/${difficulty}/${start}-${end}
+    GET /api/questions/{difficulty}/{start}-{end}
 ```
 
 | Parameter | Type     | Required | Description                   | 
