@@ -40,9 +40,9 @@ module.exports = {
     },
     
     /**
-     * Function to get user badges
+     * Function to get user submissions
      * @param {String} username Username that we want to search up
-     * @returns User profile object
+     * @returns User submissions object
      */
     async getSubmissions(username) {
         const options = {
@@ -72,6 +72,11 @@ module.exports = {
         }
     },
 
+    /**
+     * Function to get user badges
+     * @param {String} username Username that we want to search up
+     * @returns Badges data object
+     */
     async getBadges(username) {
         const options = {
             query: `query getUserProfile($username: String!) {
