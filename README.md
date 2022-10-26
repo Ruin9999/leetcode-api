@@ -1,5 +1,5 @@
 
-# Leetcode API
+# Leetcode API [DEPRECATED]
 
 An unofficial API for interfacing with [leetcode's](https://leetcode.com) graphql database.
 
